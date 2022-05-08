@@ -4,88 +4,138 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
 
+		<!-- CSS Custom -->
 		<link rel="stylesheet" href="style.css" />
 		<title>Responsive Table</title>
 	</head>
 	<body>
-		<h1>Responsive Table Using Div Tag</h1>
-		<div class="table">
-			<div class="tableBody">
-				<div class="tableRow">
-					<div class="tableHead">ID</div>
-					<div class="tableHead">Name</div>
-					<div class="tableHead">Address</div>
-					<div class="tableHead">Picture</div>
-				</div>
-				<div class="tableRow">
-					<div data-header="ID" class="tableCell">1</div>
-					<div data-header="Name" class="tableCell">Jack Sparrow</div>
-					<div data-header="Address" class="tableCell">
-						Jalan Bajak Laut No. 5, Kelurahan Jatiseri, Kecamatan Bolabatu, Bandeng
-					</div>
-					<div data-header="Picture" class="tableCell">
-						<img
-							src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
-							alt="home"
-						/>
-					</div>
-				</div>
-				<div class="tableRow">
-					<div data-header="ID" class="tableCell">2</div>
-					<div data-header="Name" class="tableCell">Anna Williams</div>
-					<div data-header="Address" class="tableCell">
-						Jalan Tekken Tag Tournament 2, Kelurahan Pasar Sabtu, Kecamatan Pasar Sabtu, Yakarta
-						Selatan
-					</div>
-					<div data-header="Picture" class="tableCell">
-						<img
-							src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
-							alt="home"
-						/>
-					</div>
-				</div>
-				<div class="tableRow">
-					<div data-header="ID" class="tableCell">3</div>
-					<div data-header="Name" class="tableCell">Stephen Chow</div>
-					<div data-header="Address" class="tableCell">
-						Jalan Komedi Tenggara 8 No. 11, Kelurahan Kranci, Kecamatan Bukasi Barat, Bukasi
-					</div>
-					<div data-header="Picture" class="tableCell">
-						<img
-							src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
-							alt="home"
-						/>
-					</div>
-				</div>
-				<div class="tableRow">
-					<div data-header="ID" class="tableCell">4</div>
-					<div data-header="Name" class="tableCell">Roberto Carlos da Silva Rocha</div>
-					<div data-header="Address" class="tableCell">
-						Jalan Antariksa IV Blok B-20, Kelurahan Regunan, Kecamatan Pasar Sabtu, Yakarta Selatan
-					</div>
-					<div data-header="Picture" class="tableCell">
-						<img
-							src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
-							alt="home"
-						/>
-					</div>
-				</div>
-				<div class="tableRow">
-					<div data-header="ID" class="tableCell">5</div>
-					<div data-header="Name" class="tableCell">Isyana Sarasvati</div>
-					<div data-header="Address" class="tableCell">
-						Apartemen Emperor Garden Mediterania Park, Kelurahan Gragal, Kecamatan Gragal
-						Pertambahan, Yakarta Barat
-					</div>
-					<div data-header="Picture" class="tableCell">
-						<img
-							src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
-							alt="home"
-						/>
-					</div>
+		<div class="container py-4 py-lg-0">
+			<div class="row">
+				<div class="col-12">
+					<h1 class="text-center mb-4">Responsive Table Using Table Tag</h1>
+					<table class="table table-bordered border-dark mobile-responsive">
+						<thead>
+							<tr>
+								<th scope="col">No</th>
+								<th scope="col">Full Name</th>
+								<th scope="col">Nick Name</th>
+								<th scope="col">Email</th>
+								<th scope="col">Age</th>
+								<th scope="col">Interest</th>
+								<th scope="col">Country</th>
+								<th scope="col">Picture</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-header="No" class="align-middle text-lg-center"><span>1</span></td>
+								<td data-header="Full Name" class="align-middle"><span>Michael Jackson</span></td>
+								<td data-header="Nick Name" class="align-middle"><span>MJ</span></td>
+								<td data-header="Email" class="align-middle"><span>billiejean@email.com</span></td>
+								<td data-header="Age" class="align-middle"><span>26</span></td>
+								<td data-header="Interest" class="align-middle"><span>music</span></td>
+								<td data-header="Country" class="align-middle"><span>U.S.A.</span></td>
+								<td data-header="Picture">
+									<span
+										><img
+											src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+											alt="home"
+											class="img-fluid"
+									/></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-header="No" class="align-middle text-lg-center"><span>2</span></td>
+								<td data-header="Full Name" class="align-middle"><span>Whitney Houston</span></td>
+								<td data-header="Nick Name" class="align-middle"><span>Whitney</span></td>
+								<td data-header="Email" class="align-middle">
+									<span>iwillalwaysloveyouuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu@email.com</span>
+								</td>
+								<td data-header="Age" class="align-middle"><span>24</span></td>
+								<td data-header="Interest" class="align-middle"><span>music</span></td>
+								<td data-header="Country" class="align-middle"><span>U.S.A.</span></td>
+								<td data-header="Picture">
+									<span
+										><img
+											src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+											alt="home"
+											class="img-fluid"
+									/></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-header="No" class="align-middle text-lg-center"><span>3</span></td>
+								<td data-header="Full Name" class="align-middle">
+									<span>Roberto Carlos da Silva Rocha</span>
+								</td>
+								<td data-header="Nick Name" class="align-middle"><span>Roberto Carlos</span></td>
+								<td data-header="Email" class="align-middle"><span>bananashoot@email.com</span></td>
+								<td data-header="Age" class="align-middle"><span>31</span></td>
+								<td data-header="Interest" class="align-middle"><span>sport</span></td>
+								<td data-header="Country" class="align-middle"><span>Brazil</span></td>
+								<td data-header="Picture">
+									<span
+										><img
+											src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+											alt="home"
+											class="img-fluid"
+									/></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-header="No" class="align-middle text-lg-center"><span>4</span></td>
+								<td data-header="Full Name" class="align-middle"><span>Fabio Quartararo</span></td>
+								<td data-header="Nick Name" class="align-middle"><span>Quartararo</span></td>
+								<td data-header="Email" class="align-middle"><span>speed@email.com</span></td>
+								<td data-header="Age" class="align-middle"><span>28</span></td>
+								<td data-header="Interest" class="align-middle"><span>sport</span></td>
+								<td data-header="Country" class="align-middle">France</td>
+								<td data-header="Picture">
+									<span
+										><img
+											src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+											alt="home"
+											class="img-fluid"
+									/></span>
+								</td>
+							</tr>
+							<tr>
+								<td data-header="No" class="align-middle text-lg-center"><span>5</span></td>
+								<td data-header="Full Name" class="align-middle"><span>Anya Taylor-Joy</span></td>
+								<td data-header="Nick Name" class="align-middle"><span>Anya</span></td>
+								<td data-header="Email" class="align-middle">
+									<span>anyathewitch@email.com</span>
+								</td>
+								<td data-header="Age" class="align-middle"><span>22</span></td>
+								<td data-header="Interest" class="align-middle"><span>film</span></td>
+								<td data-header="Country" class="align-middle"><span>U.S.A.</span></td>
+								<td data-header="Picture">
+									<span
+										><img
+											src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+											alt="home"
+											class="img-fluid"
+									/></span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		></script>
 	</body>
 </html>
